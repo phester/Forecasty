@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="Alert.cs" company="Paul Hester">
+// <copyright file="Alert.cs" company="https://www.linkedin.com/in/paulhester">
 //      Will code for food or beer : )
 // </copyright>
 //-----------------------------------------------------------------------

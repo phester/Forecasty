@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="DataPoint.cs" company="Paul Hester">
+// <copyright file="DataPoint.cs" company="https://www.linkedin.com/in/paulhester">
 //      Will code for food or beer : )
 // </copyright>
 //-----------------------------------------------------------------------

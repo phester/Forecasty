@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="Flag.cs" company="Paul Hester">
+// <copyright file="Flag.cs" company="https://www.linkedin.com/in/paulhester">
 //      Will code for food or beer : )
 // </copyright>
 //-----------------------------------------------------------------------

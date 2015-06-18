@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="DataBlock.cs" company="Paul Hester">
+// <copyright file="DataBlock.cs" company="https://www.linkedin.com/in/paulhester">
 //      Will code for food or beer : )
 // </copyright>
 //-----------------------------------------------------------------------

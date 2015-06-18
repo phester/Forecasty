@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="UnixTimeConverter.cs" company="Paul Hester">
+// <copyright file="UnixTimeConverter.cs" company="https://www.linkedin.com/in/paulhester">
 //      Will code for food or beer : )
 //      Source: http://stackoverflow.com/a/7844741
 // </copyright>
