@@ -21,7 +21,7 @@ namespace Forecasty.Core
         /// <param name="longitude">Longitude of location.</param>
         public ForecastIoRequest(string apiKey, double latitude, double longitude)
         {
-            // I.   Validate all requrest data elements are not null or empty.
+            // I.   Validate all request data elements are not null or empty.
             // II.  Set request properties.
 
             // I.
