@@ -33,7 +33,7 @@ namespace Forecasty.Core
             // II.
             this.ApiKey = apiKey;
             this.Latitude = latitude;
-            this.Longitude = longitude; 
+            this.Longitude = longitude;
         }
 
         /// <summary>
