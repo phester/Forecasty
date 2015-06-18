@@ -1,6 +1,6 @@
 # Forecasty
 
-# This is pre-alpha. I wouldn't use it or trust it at all : )
+# This is in a pre-using state. I wouldn't trust it as far as you can throw it : )
 
 A c# Forecast.Io wrapper with a built-in policy-driven caching mechanism to cache API call results.
 
