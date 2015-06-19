@@ -9,11 +9,12 @@
         {
             // TODO: Implement call count ResponseHeaders["X-Forecast-API-Calls"]
 
-            var uri = new Uri(url);
+            if (string.IsNullOrWhiteSpace(url))
+                throw new ArgumentNullException("Url must be defined.");
+
             using (var client = new WebClient())
             {
-                var result = client.DownloadString(uri);
-                return result;
+                return client.DownloadString(new Uri(url));
             }
         }
     }

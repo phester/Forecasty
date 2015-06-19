@@ -3,9 +3,11 @@
 //      Will code for food or beer : )
 // </copyright>
 //-----------------------------------------------------------------------
+
 namespace Forecasty.Core.Providers
 {
     using System;
+    using System.Net;
     using Persisters;
 
     /// <summary>
@@ -38,24 +40,36 @@ namespace Forecasty.Core.Providers
             // II.  Does item exist in persisted place? If not, get it and persist. Otherwise, pull the entry.
             // III. Generate the response.
 
-            // I.
-            var persisted = false;
-            IPersistEntry entry;
-
-            // II.
-            if (!this._provider.Exists(request.Indetifier))
+            try
             {
-                entry = this.GetEntry(request);
-                this._provider.Set(entry);
-            }
-            else
-            {
-                entry = this._provider.Get(request.Indetifier);
-                persisted = true;
-            }
+                // I.
+                var persisted = false;
+                IPersistEntry entry;
 
-            // III.
-            return this.GenerateForecastResponse(entry, persisted);
+                // II.
+                if (!this._provider.Exists(request.Indetifier))
+                {
+                    entry = this.GetEntry(request);
+                    this._provider.Set(entry);
+                }
+                else
+                {
+                    entry = this._provider.Get(request.Indetifier);
+                    persisted = true;
+                }
+
+                // III.
+                return this.GenerateForecastResponse(entry, persisted);
+            }
+            catch (Exception wex)
+            {
+                // TODO: Move error details into own type. Look at specific exceptions.
+                return new ForecastIoResponse()
+                {
+                    Error = true,
+                    ErrorMessage = "The request has errored. The exception: " + wex.Message
+                };
+            }
         }
 
         /// <summary>

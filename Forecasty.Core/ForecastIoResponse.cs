@@ -14,6 +14,16 @@ namespace Forecasty.Core
     public class ForecastIoResponse
     {
         /// <summary>
+        /// Gets or sets whether or not the request errored.
+        /// </summary>
+        public bool Error { get; set; }
+
+        /// <summary>
+        /// Gets or sets an error message if occurs.
+        /// </summary>
+        public string ErrorMessage { get; set; }
+
+        /// <summary>
         /// Gets or sets a value indicating whether or not the response was persisted or not.
         /// </summary>
         public bool Persisted { get; set; }

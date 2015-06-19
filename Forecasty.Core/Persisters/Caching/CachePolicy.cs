@@ -10,5 +10,9 @@ namespace Forecasty.Core.Persisters.Caching
     /// </summary>
     public class CachePolicy
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        public long TimeToExpireItem { get; set; }
     }
 }

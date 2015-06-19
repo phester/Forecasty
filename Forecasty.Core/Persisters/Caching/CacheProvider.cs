@@ -64,8 +64,10 @@ namespace Forecasty.Core.Persisters.Caching
         /// </summary>
         public void Clear()
         {
-            // TODO: FIX - Using for testing. This will remove ALL items in cache. Need to maintain a list of added keys. 
+            // TODO: FIX - Using for testing. This will remove ALL items in cache. Need to maintain a list of added keys.
+            // TODO: Thread-safe
             MemoryCache.Default.ToList().ForEach(a => MemoryCache.Default.Remove(a.Key));
+
         }
 
         /// <summary>
