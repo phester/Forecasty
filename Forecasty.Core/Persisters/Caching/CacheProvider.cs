@@ -11,6 +11,7 @@ namespace Forecasty.Core.Persisters.Caching
 
     /// <summary>
     /// Manages the caching of items.
+    /// TODO: Lots of work here.
     /// </summary>
     public class CacheProvider : IPersistProvider
     {

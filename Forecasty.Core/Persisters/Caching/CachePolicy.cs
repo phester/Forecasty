@@ -13,6 +13,6 @@ namespace Forecasty.Core.Persisters.Caching
         /// <summary>
         /// 
         /// </summary>
-        public long TimeToExpireItem { get; set; }
+        public long TimeToExpireEntry { get; set; }
     }
 }
